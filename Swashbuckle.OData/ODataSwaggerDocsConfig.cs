@@ -9,6 +9,7 @@ using Swashbuckle.OData.Descriptions;
 using Swashbuckle.Swagger;
 using System.Xml.XPath;
 using System.Web.Http.Dispatcher;
+using Microsoft.AspNet.OData;
 using System.Web.OData;
 
 namespace Swashbuckle.OData

@@ -1,6 +1,6 @@
 ﻿using System.Diagnostics.Contracts;
 using System.Web.Http.Controllers;
-using System.Web.OData;
+using Microsoft.AspNet.OData;
 
 namespace Swashbuckle.OData.Descriptions
 {

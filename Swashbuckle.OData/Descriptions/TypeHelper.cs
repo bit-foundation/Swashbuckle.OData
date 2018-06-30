@@ -10,6 +10,7 @@ using System.Runtime.Serialization;
 using System.Threading.Tasks;
 using System.Web.Http.Dispatcher;
 using System.Web.OData.Formatter;
+using Microsoft.AspNet.OData.Formatter;
 
 namespace System.Web.OData
 {

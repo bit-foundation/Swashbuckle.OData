@@ -9,7 +9,7 @@ using System.Web.Http.Controllers;
 using System.Web.Http.Description;
 using System.Web.Http.Routing;
 using System.Web.Http.Services;
-using System.Web.OData.Formatter;
+using Microsoft.AspNet.OData.Formatter;
 
 namespace Swashbuckle.OData.Descriptions
 {

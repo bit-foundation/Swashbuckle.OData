@@ -9,6 +9,8 @@ using System.Web.Http;
 using System.Web.Http.Controllers;
 using System.Web.OData;
 using System.Web.OData.Formatter;
+using Microsoft.AspNet.OData;
+using Microsoft.AspNet.OData.Formatter;
 using Microsoft.OData.Edm;
 using Swashbuckle.OData.Descriptions;
 using Swashbuckle.Swagger;
