@@ -2,8 +2,8 @@
 using System.Collections.Generic;
 using System.Diagnostics.Contracts;
 using System.Linq;
+using System.Net;
 using System.Reflection;
-using System.Web;
 using System.Web.Http;
 using System.Web.Http.Routing;
 using Microsoft.AspNet.OData.Routing;
@@ -72,7 +72,7 @@ namespace Swashbuckle.OData
 
             oDataRoute.SetHttpConfiguration(httpConfig);
 
-            var urlDecodedTemplate = HttpUtility.UrlDecode(routeTemplate);
+            var urlDecodedTemplate = WebUtility.UrlDecode(routeTemplate);
             Contract.Assume(!string.IsNullOrWhiteSpace(urlDecodedTemplate));
 
             var swaggerRoute = new SwaggerRoute(urlDecodedTemplate, oDataRoute);

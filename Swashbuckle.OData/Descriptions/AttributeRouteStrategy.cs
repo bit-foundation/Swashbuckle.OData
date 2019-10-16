@@ -2,8 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Diagnostics.Contracts;
 using System.Linq;
+using System.Net;
 using System.Net.Http;
-using System.Web;
 using System.Web.Http;
 using System.Web.Http.Controllers;
 using Microsoft.AspNet.OData.Extensions;
@@ -54,7 +54,7 @@ namespace Swashbuckle.OData.Descriptions
             var odataRouteAttribute = actionDescriptor.GetCustomAttributes<ODataRouteAttribute>()?.FirstOrDefault();
 
             Contract.Assume(odataRouteAttribute != null);
-            var pathTemplate = HttpUtility.UrlDecode(oDataRoute.GetRoutePrefix().AppendUriSegment(GetODataPathTemplate(odataRoutePrefixAttribute?.Prefix, odataRouteAttribute.PathTemplate)));
+            var pathTemplate = WebUtility.UrlDecode(oDataRoute.GetRoutePrefix().AppendUriSegment(GetODataPathTemplate(odataRoutePrefixAttribute?.Prefix, odataRouteAttribute.PathTemplate)));
             Contract.Assume(pathTemplate != null);
 
             return new ODataActionDescriptor(actionDescriptor, oDataRoute, pathTemplate, CreateHttpRequestMessage(actionDescriptor, oDataRoute, httpConfig));
