@@ -29,18 +29,18 @@ using System;
 using System.Collections.ObjectModel;
 using System.Collections.Specialized;
 
-namespace System
+namespace Swashbuckle.OData
 {
-    internal class UriTemplateMatch
+    internal class ODataUriTemplateMatch
     {
-        public UriTemplateMatch()
+        public ODataUriTemplateMatch()
         {
         }
 
         Uri base_uri, request_uri;
         NameValueCollection nvc, query_params;
         object data;
-        UriTemplate template;
+        ODataUriTemplate template;
         Collection<string> path_segments, wildcard;
 
         public Uri BaseUri
@@ -91,7 +91,7 @@ namespace System
             set { request_uri = value; }
         }
 
-        public UriTemplate Template
+        public ODataUriTemplate Template
         {
             get { return template; }
             set { template = value; }

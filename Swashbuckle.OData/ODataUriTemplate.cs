@@ -33,9 +33,9 @@ using System.Collections.Specialized;
 using System.Globalization;
 using System.Text;
 
-namespace System
+namespace Swashbuckle.OData
 {
-    internal class UriTemplate
+    internal class ODataUriTemplate
     {
         static readonly ReadOnlyCollection<string> empty_strings = new ReadOnlyCollection<string>(new string[0]);
 
@@ -44,22 +44,22 @@ namespace System
         string wild_path_name;
         Dictionary<string, string> query_params = new Dictionary<string, string>();
 
-        public UriTemplate(string template)
+        public ODataUriTemplate(string template)
             : this(template, false)
         {
         }
 
-        public UriTemplate(string template, IDictionary<string, string> additionalDefaults)
+        public ODataUriTemplate(string template, IDictionary<string, string> additionalDefaults)
             : this(template, false, additionalDefaults)
         {
         }
 
-        public UriTemplate(string template, bool ignoreTrailingSlash)
+        public ODataUriTemplate(string template, bool ignoreTrailingSlash)
             : this(template, ignoreTrailingSlash, null)
         {
         }
 
-        public UriTemplate(string template, bool ignoreTrailingSlash, IDictionary<string, string> additionalDefaults)
+        public ODataUriTemplate(string template, bool ignoreTrailingSlash, IDictionary<string, string> additionalDefaults)
         {
             if (template == null)
                 throw new ArgumentNullException("template");
@@ -233,7 +233,7 @@ namespace System
 
         // Compare
 
-        public bool IsEquivalentTo(UriTemplate other)
+        public bool IsEquivalentTo(ODataUriTemplate other)
         {
             if (other == null)
                 throw new ArgumentNullException("other");
@@ -244,7 +244,7 @@ namespace System
 
         static readonly char[] slashSep = { '/' };
 
-        public UriTemplateMatch Match(Uri baseAddress, Uri candidate)
+        public ODataUriTemplateMatch Match(Uri baseAddress, Uri candidate)
         {
             CheckBaseAddress(baseAddress);
             if (candidate == null)
@@ -267,7 +267,7 @@ namespace System
             }
 
             int i = 0, c = 0;
-            UriTemplateMatch m = new UriTemplateMatch();
+            ODataUriTemplateMatch m = new ODataUriTemplateMatch();
             m.BaseUri = baseAddress;
             m.Template = this;
             m.RequestUri = candidate;

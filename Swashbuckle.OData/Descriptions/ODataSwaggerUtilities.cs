@@ -8,7 +8,6 @@ using System.Linq;
 using System.Web.Http.Routing;
 using System.Web.Http.Routing.Constraints;
 using System.Web.OData.Formatter;
-using Microsoft.AspNet.OData.Formatter;
 using Microsoft.AspNet.OData.Routing;
 using Microsoft.OData.Edm;
 using Newtonsoft.Json;
@@ -63,7 +62,7 @@ namespace Swashbuckle.OData.Descriptions
         {
             Contract.Requires(oDataRoute != null);
             var routePrefixParameters = new List<Parameter>();
-            var routePrefixTemplate = new UriTemplate(oDataRoute.GetRoutePrefix());
+            var routePrefixTemplate = new ODataUriTemplate(oDataRoute.GetRoutePrefix());
             if (routePrefixTemplate.PathSegmentVariableNames.Any())
             {
                 routePrefixParameters.AddRange(routePrefixTemplate.PathSegmentVariableNames.Select(pathSegmentVariableName => CreateParameter(pathSegmentVariableName, oDataRoute)));

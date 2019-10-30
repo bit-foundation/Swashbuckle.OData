@@ -27,7 +27,7 @@ namespace Swashbuckle.OData.Descriptions
             {
                 var prefix = new Uri(serviceRoot);
 
-                return new UriTemplate(pathTemplate).BindByName(prefix, parameters).ToString();
+                return new ODataUriTemplate(pathTemplate).BindByName(prefix, parameters).ToString();
             }
             return serviceRoot.AppendUriSegment(pathTemplate);
         }
