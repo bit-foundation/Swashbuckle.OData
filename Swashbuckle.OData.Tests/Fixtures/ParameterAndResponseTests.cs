@@ -132,9 +132,9 @@ namespace Swashbuckle.OData.Tests
 
         [HttpGet]
         [ResponseType(typeof(long))]
-        public IHttpActionResult Long(long longParam)
+        public IHttpActionResult Get(long key)
         {
-            return Ok(longParam);
+            return Ok(key);
         }
     }
 }

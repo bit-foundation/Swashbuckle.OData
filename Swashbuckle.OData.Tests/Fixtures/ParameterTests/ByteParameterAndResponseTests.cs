@@ -96,9 +96,9 @@ namespace Swashbuckle.OData.Tests
 
         [HttpGet]
         [ResponseType(typeof(byte))]
-        public IHttpActionResult ResponseTest(byte param)
+        public IHttpActionResult Get(byte key)
         {
-            return Ok(param);
+            return Ok(key);
         }
     }
 }
