@@ -60,7 +60,7 @@ namespace Swashbuckle.OData.Tests
                 enumParamter?.@enum.Should().NotBeEmpty();
                 enumParamter?.@in.Should().Be("path");
                 enumParamter?.@type.Should().Be("string");
-                enumParamter?.required.ShouldBeEquivalentTo(true);
+                enumParamter?.required.Should().Be(true);
 
                 await ValidationUtils.ValidateSwaggerJson();
             }
@@ -122,14 +122,14 @@ namespace Swashbuckle.OData.Tests
                 enumParamter?.@enum.Should().NotBeEmpty();
                 enumParamter?.@in.Should().Be("path");
                 enumParamter?.@type.Should().Be("string");
-                enumParamter?.required.ShouldBeEquivalentTo(true);
+                enumParamter?.required.Should().Be(true);
 
                 // Assert Id Pararemter
                 var idParamter = pathItem?.@get.parameters.SingleOrDefault(p => p.name == IdKeyName);
                 idParamter.Should().NotBeNull();
                 idParamter?.@in.Should().Be("path");
                 idParamter?.@type.Should().Be("integer");
-                idParamter?.required.ShouldBeEquivalentTo(true);
+                idParamter?.required.Should().Be(true);
 
                 await ValidationUtils.ValidateSwaggerJson();
             }

@@ -47,7 +47,7 @@ namespace Swashbuckle.OData.Tests
                 pathItem.Should().NotBeNull();
                 var summary = pathItem.get.summary;
                 summary.Should().NotBeNullOrEmpty();
-                summary.Trim().ShouldBeEquivalentTo(getCustomersSummaryText);
+                summary.Trim().Should().BeEquivalentTo(getCustomersSummaryText);
                                 
                 await ValidationUtils.ValidateSwaggerJson();
             }            

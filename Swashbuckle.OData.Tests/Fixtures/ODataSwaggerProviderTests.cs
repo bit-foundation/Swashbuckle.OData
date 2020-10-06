@@ -169,7 +169,7 @@ namespace Swashbuckle.OData.Tests
                 var swaggerDocument2 = await httpClient.GetJsonAsync<SwaggerDocument>("swagger/docs/v1");
                 swaggerDocument2.Should().NotBeNull();
 
-                swaggerDocument.ShouldBeEquivalentTo(swaggerDocument2);
+                swaggerDocument.Should().BeEquivalentTo(swaggerDocument2);
 
                 await ValidationUtils.ValidateSwaggerJson();
 
@@ -204,7 +204,7 @@ namespace Swashbuckle.OData.Tests
                 customAssembliesResolverSwaggerDoc.Should().NotBeNull();                
             }
 
-            customAssembliesResolverSwaggerDoc.ShouldBeEquivalentTo(defaultAssembliesResolverSwaggerDoc);
+            customAssembliesResolverSwaggerDoc.Should().BeEquivalentTo(defaultAssembliesResolverSwaggerDoc);
             
         }
 

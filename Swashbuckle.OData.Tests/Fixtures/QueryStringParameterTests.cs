@@ -41,13 +41,13 @@ namespace Swashbuckle.OData.Tests
                 var barParameter = pathItem.get.parameters.SingleOrDefault(parameter => parameter.name == "bar");
                 barParameter.Should().NotBeNull();
                 barParameter.required.Should().BeFalse();
-                barParameter.type.ShouldBeEquivalentTo("boolean");
-                barParameter.@in.ShouldBeEquivalentTo("query");
+                barParameter.type.Should().BeEquivalentTo("boolean");
+                barParameter.@in.Should().BeEquivalentTo("query");
                 var filterParameter = pathItem.get.parameters.SingleOrDefault(parameter => parameter.name == "$filter");
                 filterParameter.Should().NotBeNull();
                 filterParameter.description.Should().NotBeNullOrWhiteSpace();
-                filterParameter.type.ShouldBeEquivalentTo("string");
-                filterParameter.@in.ShouldBeEquivalentTo("query");
+                filterParameter.type.Should().BeEquivalentTo("string");
+                filterParameter.@in.Should().BeEquivalentTo("query");
 
                 await ValidationUtils.ValidateSwaggerJson();
             }
@@ -75,13 +75,13 @@ namespace Swashbuckle.OData.Tests
                 var barParameter = pathItem.get.parameters.SingleOrDefault(parameter => parameter.name == "bat");
                 barParameter.Should().NotBeNull();
                 barParameter.required.Should().BeFalse();
-                barParameter.type.ShouldBeEquivalentTo("boolean");
-                barParameter.@in.ShouldBeEquivalentTo("query");
+                barParameter.type.Should().BeEquivalentTo("boolean");
+                barParameter.@in.Should().BeEquivalentTo("query");
                 var filterParameter = pathItem.get.parameters.SingleOrDefault(parameter => parameter.name == "$filter");
                 filterParameter.Should().NotBeNull();
                 filterParameter.description.Should().NotBeNullOrWhiteSpace();
-                filterParameter.type.ShouldBeEquivalentTo("string");
-                filterParameter.@in.ShouldBeEquivalentTo("query");
+                filterParameter.type.Should().BeEquivalentTo("string");
+                filterParameter.@in.Should().BeEquivalentTo("query");
 
                 await ValidationUtils.ValidateSwaggerJson();
             }

@@ -46,8 +46,8 @@ namespace Swashbuckle.OData.Tests
                 var filterParameter = pathItem.get.parameters.SingleOrDefault(parameter => parameter.name == "$filter");
                 filterParameter.Should().NotBeNull();
                 filterParameter.description.Should().NotBeNullOrWhiteSpace();
-                filterParameter.type.ShouldBeEquivalentTo("string");
-                filterParameter.@in.ShouldBeEquivalentTo("query");
+                filterParameter.type.Should().BeEquivalentTo("string");
+                filterParameter.@in.Should().BeEquivalentTo("query");
 
                 pathItem.get.parameters.Where(parameter => parameter.name.StartsWith("$")).Should().OnlyContain(parameter => parameter.required == false);
 
