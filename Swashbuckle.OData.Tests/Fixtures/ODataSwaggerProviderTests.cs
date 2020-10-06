@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Threading.Tasks;
 using System.Web.Http.Dispatcher;
-using System.Web.OData.Builder;
-using System.Web.OData.Extensions;
 using FluentAssertions;
 using Microsoft.OData.Edm;
 using Microsoft.Owin.Hosting;
@@ -16,6 +14,8 @@ using SwashbuckleODataSample.Models;
 using SwashbuckleODataSample.ODataControllers;
 using System.Collections.Generic;
 using System.Reflection;
+using Microsoft.AspNet.OData.Extensions;
+using Microsoft.AspNet.OData.Builder;
 
 namespace Swashbuckle.OData.Tests
 {

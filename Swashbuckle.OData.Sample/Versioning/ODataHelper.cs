@@ -4,10 +4,10 @@ using System.Net.Http;
 using System.Text;
 using System.Web.Http.ModelBinding;
 using System.Web.Http.Routing;
-using System.Web.OData.Extensions;
+using Microsoft.AspNet.OData.Extensions;
 using Microsoft.OData;
 using Microsoft.OData.UriParser;
-using ODataPath = System.Web.OData.Routing.ODataPath;
+using ODataPath = Microsoft.AspNet.OData.Routing.ODataPath;
 
 namespace SwashbuckleODataSample.Versioning
 {

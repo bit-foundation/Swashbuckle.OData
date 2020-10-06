@@ -6,6 +6,7 @@ using System.Net;
 using System.Web.Http;
 using System.Web.Http.Description;
 using System.Web.OData;
+using Microsoft.AspNet.OData;
 using SwashbuckleODataSample.Models;
 
 namespace SwashbuckleODataSample.ODataControllers

@@ -7,10 +7,10 @@ using System.Net.Http;
 using System.Threading.Tasks;
 using System.Web.Http;
 using System.Web.Http.Description;
-using System.Web.OData;
-using System.Web.OData.Builder;
-using System.Web.OData.Extensions;
 using FluentAssertions;
+using Microsoft.AspNet.OData;
+using Microsoft.AspNet.OData.Builder;
+using Microsoft.AspNet.OData.Extensions;
 using Microsoft.OData.Edm;
 using Microsoft.Owin.Hosting;
 using Newtonsoft.Json;
@@ -233,8 +233,6 @@ namespace Swashbuckle.OData.Tests
 
             var create = entityType.Collection.Action("Create");
             create.ReturnsFromEntitySet<Supplier>("Suppliers");
-            create.Parameter<string>("code").OptionalParameter = false;
-            create.Parameter<string>("name").OptionalParameter = false;
             create.Parameter<string>("description");
             
             var createWithEnum = entityType.Collection.Action("CreateWithEnum");

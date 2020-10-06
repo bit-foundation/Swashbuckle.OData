@@ -1,8 +1,8 @@
-﻿using System;
+﻿using Microsoft.AspNet.OData.Extensions;
+using System;
 using System.Collections.Generic;
 using System.Net.Http;
 using System.Web.Http;
-using System.Web.OData.Extensions;
 
 namespace Swashbuckle.OData.Tests
 {

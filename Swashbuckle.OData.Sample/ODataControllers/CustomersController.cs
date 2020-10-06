@@ -4,13 +4,12 @@ using System.Net;
 using System.Threading.Tasks;
 using System.Web.Http;
 using System.Web.Http.Description;
-using System.Web.OData;
 using SwashbuckleODataSample.Models;
 using SwashbuckleODataSample.Repositories;
 using System.Data.Entity;
 using Swashbuckle.Swagger.Annotations;
 using Swashbuckle.OData;
-using System.Web.OData.Routing;
+using Microsoft.AspNet.OData;
 
 namespace SwashbuckleODataSample.ODataControllers
 {

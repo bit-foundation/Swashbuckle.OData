@@ -1,10 +1,10 @@
 using System.Linq;
 using System.Net.Http;
 using System.Web.Http.Controllers;
-using System.Web.OData.Routing.Conventions;
+using Microsoft.AspNet.OData.Routing.Conventions;
 using Microsoft.OData.UriParser;
 using SwashbuckleODataSample.ODataControllers;
-using ODataPath = System.Web.OData.Routing.ODataPath;
+using ODataPath = Microsoft.AspNet.OData.Routing.ODataPath;
 
 namespace SwashbuckleODataSample
 {

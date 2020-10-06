@@ -2,8 +2,8 @@
 using System.Collections.Generic;
 using System.Web.Http;
 using System.Web.Http.Routing;
-using System.Web.OData.Routing;
-using System.Web.OData.Routing.Conventions;
+using Microsoft.AspNet.OData.Routing;
+using Microsoft.AspNet.OData.Routing.Conventions;
 using Microsoft.OData.Edm;
 
 namespace SwashbuckleODataSample.Versioning

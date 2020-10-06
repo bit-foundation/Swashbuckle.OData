@@ -1,5 +1,5 @@
-﻿using System.Web.OData.Builder;
-using Containment;
+﻿using Containment;
+using Microsoft.AspNet.OData.Builder;
 using Microsoft.OData.Edm;
 
 namespace Swashbuckle.OData.Tests.Containment

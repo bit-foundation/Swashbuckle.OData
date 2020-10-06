@@ -10,6 +10,7 @@ using SwashbuckleODataSample.Models;
 using SwashbuckleODataSample.Repositories;
 using SwashbuckleODataSample.Utils;
 using System.Collections.Generic;
+using Microsoft.AspNet.OData;
 
 namespace SwashbuckleODataSample.ODataControllers
 {
