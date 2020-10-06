@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.AspNet.OData.Routing;
+using System;
 using System.Diagnostics.Contracts;
 using System.Net;
 using System.Net.Http;
@@ -52,7 +53,7 @@ namespace Swashbuckle.OData.Descriptions
 
             try
             {
-                var actionSelector = perControllerConfig.Services?.GetActionSelector();
+                var actionSelector = new ODataActionSelector(new ApiControllerActionSelector());
                 Contract.Assume(actionSelector != null);
                 actionDescriptor = actionSelector.SelectAction(controllerContext);
             }
