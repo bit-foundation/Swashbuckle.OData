@@ -95,7 +95,7 @@ namespace Swashbuckle.OData.Tests
             var oDataRoute = ConfigureOData(appBuilder, targetControllers, config, unitTestConfigs);
             var rootContainer = config.GetODataRootContainer(oDataRoute);
 
-            // config.Formatters.InsertRange(0, ODataMediaTypeFormatters.Create(new DefaultODataSerializerProvider(rootContainer), new DefaultODataDeserializerProvider(rootContainer)));
+            // config.Formatters.InsertRange(0, ODataMediaTypeFormatters.Create(new DefaultODataSerializerProvider(rootContainer), new DefaultODataDeserializerProvider(rootContainer))); // workaround: make project built
 
             config.EnsureInitialized();
         }

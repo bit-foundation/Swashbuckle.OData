@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Diagnostics.Contracts;
 using System.Linq;
@@ -35,8 +36,17 @@ namespace Swashbuckle.OData.Descriptions
 
             if (attributeRoutingConvention != null)
             {
-                return attributeRoutingConvention
-                    .GetInstanceField<IDictionary<ODataPathTemplate, HttpActionDescriptor>>("_attributeMappings", true)
+                var attributeMappings = attributeRoutingConvention
+                    .GetInstanceField<IDictionary>("_attributeMappings", true);
+
+                var typedAttributeMappings = new Dictionary<ODataPathTemplate, HttpActionDescriptor>();
+
+                foreach (DictionaryEntry item in attributeMappings)
+                {
+                    typedAttributeMappings.Add((ODataPathTemplate)item.Key, item.Value.GetInstanceField<HttpActionDescriptor>("innerDescriptor"));
+                }
+
+                return typedAttributeMappings
                     .Select(pair => GetODataActionDescriptorFromAttributeRoute(pair.Value, oDataRoute, httpConfig))
                     .Where(descriptor => descriptor != null);
             }
