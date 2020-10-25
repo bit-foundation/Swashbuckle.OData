@@ -60,9 +60,9 @@ namespace Swashbuckle.OData.Tests
 
 
             var resolver = new JSchemaPreloadedResolver();
-            resolver.Add(new Uri("http://json-schema.org/draft-04/schema"), File.ReadAllText(Path.Combine(dir, @"../../schema-draft-v4.json")));
+            resolver.Add(new Uri("http://json-schema.org/draft-04/schema"), File.ReadAllText(Path.Combine(dir, @"../../../schema-draft-v4.json")));
 
-            var swaggerSchema = File.ReadAllText(Path.Combine(dir, @"../../swagger-2.0-schema.json"));
+            var swaggerSchema = File.ReadAllText(Path.Combine(dir, @"../../../swagger-2.0-schema.json"));
             var schema = JSchema.Parse(swaggerSchema, resolver);
 
             var swaggerJObject = JObject.Parse(swaggerJson);

@@ -1,0 +1,905 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Swashbuckle.OData.Tests</name>
+    </assembly>
+    <members>
+        <member name="F:Swashbuckle.OData.Tests.ContentType.ApplicationXJavascript">
+            <summary>
+            Used to denote the encoding necessary for files containing JavaScript source code. The alternative MIME type for this file type is text/javascript.
+            </summary>
+        </member>
+        <member name="F:Swashbuckle.OData.Tests.ContentType.AudioL24">
+            <summary>24bit Linear PCM audio at 8-48kHz, 1-N channels; Defined in RFC 3190</summary>
+        </member>
+        <member name="F:Swashbuckle.OData.Tests.ContentType.ApplicationXShockwaveFlash">
+            <summary>Adobe Flash files for example with the extension .swf</summary>
+        </member>
+        <member name="F:Swashbuckle.OData.Tests.ContentType.ApplicationOctetStream">
+            <summary>Arbitrary binary data.[5] Generally speaking this type identifies files that are not associated with a specific application. Contrary to past assumptions by software packages such as Apache this is not a type that should be applied to unknown files. In such a case, a server or application should not indicate a content type, as it may be incorrect, but rather, should omit the type in order to allow the recipient to guess the type.[6]</summary>
+        </member>
+        <member name="F:Swashbuckle.OData.Tests.ContentType.ApplicationAtomXml">
+            <summary>Atom feeds</summary>
+        </member>
+        <member name="F:Swashbuckle.OData.Tests.ContentType.TextCss">
+            <summary>Cascading Style Sheets; Defined in RFC 2318</summary>
+        </member>
+        <member name="F:Swashbuckle.OData.Tests.ContentType.TextCmd">
+            <summary>commands; subtype resident in Gecko browsers like Firefox 3.5</summary>
+        </member>
+        <member name="F:Swashbuckle.OData.Tests.ContentType.TextCsv">
+            <summary>Comma-separated values; Defined in RFC 4180</summary>
+        </member>
+        <member name="F:Swashbuckle.OData.Tests.ContentType.ApplicationXDeb">
+            <summary>deb (file format), a software package format used by the Debian project</summary>
+        </member>
+        <member name="F:Swashbuckle.OData.Tests.ContentType.MultipartEncrypted">
+            <summary>Defined in RFC 1847</summary>
+        </member>
+        <member name="F:Swashbuckle.OData.Tests.ContentType.MultipartSigned">
+            <summary>Defined in RFC 1847</summary>
+        </member>
+        <member name="F:Swashbuckle.OData.Tests.ContentType.MessageHttp">
+            <summary>Defined in RFC 2616</summary>
+        </member>
+        <member name="F:Swashbuckle.OData.Tests.ContentType.ModelExample">
+            <summary>Defined in RFC 4735</summary>
+        </member>
+        <member name="F:Swashbuckle.OData.Tests.ContentType.ApplicationXDvi">
+            <summary>device-independent document in DVI format</summary>
+        </member>
+        <member name="F:Swashbuckle.OData.Tests.ContentType.ApplicationXmlDtd">
+            <summary>DTD files; Defined by RFC 3023</summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "F:Swashbuckle.OData.Tests.ContentType.ApplicationJavascript" -->
+        <member name="F:Swashbuckle.OData.Tests.ContentType.ApplicationEcmascript">
+            <summary>ECMAScript/JavaScript; Defined in RFC 4329 (equivalent to application/javascript but with stricter processing rules)</summary>
+        </member>
+        <member name="F:Swashbuckle.OData.Tests.ContentType.ApplicationEdifact">
+            <summary>EDI EDIFACT data; Defined in RFC 1767</summary>
+        </member>
+        <member name="F:Swashbuckle.OData.Tests.ContentType.ApplicationEdiX12">
+            <summary>EDI X12 data; Defined in RFC 1767</summary>
+        </member>
+        <member name="F:Swashbuckle.OData.Tests.ContentType.MessagePartial">
+            <summary>Email; Defined in RFC 2045 and RFC 2046</summary>
+        </member>
+        <member name="F:Swashbuckle.OData.Tests.ContentType.MessageRfc822">
+            <summary>Email; EML files, MIME files, MHT files, MHTML files; Defined in RFC 2045 and RFC 2046</summary>
+        </member>
+        <member name="F:Swashbuckle.OData.Tests.ContentType.TextXml">
+            <summary>Extensible Markup Language; Defined in RFC 3023</summary>
+        </member>
+        <member name="F:Swashbuckle.OData.Tests.ContentType.VideoXFlv">
+            <summary>Flash video (FLV files)</summary>
+        </member>
+        <member name="F:Swashbuckle.OData.Tests.ContentType.ImageGif">
+            <summary>GIF image; Defined in RFC 2045 and RFC 2046</summary>
+        </member>
+        <member name="F:Swashbuckle.OData.Tests.ContentType.TextXGwtRpc">
+            <summary>GoogleWebToolkit data</summary>
+        </member>
+        <member name="F:Swashbuckle.OData.Tests.ContentType.ApplicationXGzip">
+            <summary>Gzip</summary>
+        </member>
+        <member name="F:Swashbuckle.OData.Tests.ContentType.TextHtml">
+            <summary>HTML; Defined in RFC 2854</summary>
+        </member>
+        <member name="F:Swashbuckle.OData.Tests.ContentType.ImageVndMicrosoftIcon">
+            <summary>ICO image; Registered[9]</summary>
+        </member>
+        <member name="F:Swashbuckle.OData.Tests.ContentType.ModelIges">
+            <summary>IGS files, IGES files; Defined in RFC 2077</summary>
+        </member>
+        <member name="F:Swashbuckle.OData.Tests.ContentType.MessageImdnXml">
+            <summary>IMDN Instant Message Disposition Notification; Defined in RFC 5438</summary>
+        </member>
+        <member name="F:Swashbuckle.OData.Tests.ContentType.ApplicationJson">
+            <summary>JavaScript Object Notation JSON; Defined in RFC 4627</summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "F:Swashbuckle.OData.Tests.ContentType.TextJavascript" -->
+        <member name="F:Swashbuckle.OData.Tests.ContentType.ImagePjpeg">
+            <summary>JPEG JFIF image; Associated with Internet Explorer; Listed in ms775147(v=vs.85) - Progressive JPEG, initiated before global browser support for progressive JPEGs (Microsoft and Firefox).</summary>
+        </member>
+        <member name="F:Swashbuckle.OData.Tests.ContentType.ImageJpeg">
+            <summary>JPEG JFIF image; Defined in RFC 2045 and RFC 2046</summary>
+        </member>
+        <member name="F:Swashbuckle.OData.Tests.ContentType.TextXJqueryTmpl">
+            <summary>jQuery template data</summary>
+        </member>
+        <member name="F:Swashbuckle.OData.Tests.ContentType.ApplicationVndGoogleEarthKmlXml">
+            <summary>KML files (e.g. for Google Earth)</summary>
+        </member>
+        <member name="F:Swashbuckle.OData.Tests.ContentType.ApplicationXLatex">
+            <summary>LaTeX files</summary>
+        </member>
+        <member name="F:Swashbuckle.OData.Tests.ContentType.VideoXMatroska">
+            <summary>Matroska open media format</summary>
+        </member>
+        <member name="F:Swashbuckle.OData.Tests.ContentType.ApplicationVndOpenxmlformatsOfficedocumentSpreadsheetmlSheet">
+            <summary>Microsoft Excel 2007 files</summary>
+        </member>
+        <member name="F:Swashbuckle.OData.Tests.ContentType.ApplicationVndMsExcel">
+            <summary>Microsoft Excel files</summary>
+        </member>
+        <member name="F:Swashbuckle.OData.Tests.ContentType.ApplicationVndOpenxmlformatsOfficedocumentPresentationmlPresentation">
+            <summary>Microsoft Powerpoint 2007 files</summary>
+        </member>
+        <member name="F:Swashbuckle.OData.Tests.ContentType.ApplicationVndMsPowerpoint">
+            <summary>Microsoft Powerpoint files</summary>
+        </member>
+        <member name="F:Swashbuckle.OData.Tests.ContentType.ApplicationVndOpenxmlformatsOfficedocumentWordprocessingmlDocument">
+            <summary>Microsoft Word 2007 files</summary>
+        </member>
+        <member name="F:Swashbuckle.OData.Tests.ContentType.ApplicationMsword">
+            <summary>Microsoft Word files[15]</summary>
+        </member>
+        <member name="F:Swashbuckle.OData.Tests.ContentType.MultipartAlternative">
+            <summary>MIME Email; Defined in RFC 2045 and RFC 2046</summary>
+        </member>
+        <member name="F:Swashbuckle.OData.Tests.ContentType.MultipartMixed">
+            <summary>MIME Email; Defined in RFC 2045 and RFC 2046</summary>
+        </member>
+        <member name="F:Swashbuckle.OData.Tests.ContentType.MultipartRelated">
+            <summary>MIME Email; Defined in RFC 2387 and used by MHTML (HTML mail)</summary>
+        </member>
+        <member name="F:Swashbuckle.OData.Tests.ContentType.MultipartFormData">
+            <summary>MIME Webform; Defined in RFC 2388</summary>
+        </member>
+        <member name="F:Swashbuckle.OData.Tests.ContentType.ApplicationVndMozillaXulXml">
+            <summary>Mozilla XUL files</summary>
+        </member>
+        <member name="F:Swashbuckle.OData.Tests.ContentType.AudioMpeg">
+            <summary>MP3 or other MPEG audio; Defined in RFC 3003</summary>
+        </member>
+        <member name="F:Swashbuckle.OData.Tests.ContentType.AudioMp4">
+            <summary>MP4 audio</summary>
+        </member>
+        <member name="F:Swashbuckle.OData.Tests.ContentType.VideoMp4">
+            <summary>MP4 video; Defined in RFC 4337</summary>
+        </member>
+        <member name="F:Swashbuckle.OData.Tests.ContentType.VideoMpeg">
+            <summary>MPEG-1 video with multiplexed audio; Defined in RFC 2045 and RFC 2046</summary>
+        </member>
+        <member name="F:Swashbuckle.OData.Tests.ContentType.ModelMesh">
+            <summary>MSH files, MESH files; Defined in RFC 2077, SILO files</summary>
+        </member>
+        <member name="F:Swashbuckle.OData.Tests.ContentType.AudioBasic">
+            <summary>mulaw audio at 8 kHz, 1 channel; Defined in RFC 2046</summary>
+        </member>
+        <member name="F:Swashbuckle.OData.Tests.ContentType.VideoOgg">
+            <summary>Ogg Theora or other video (with audio); Defined in RFC 5334</summary>
+        </member>
+        <member name="F:Swashbuckle.OData.Tests.ContentType.AudioOgg">
+            <summary>Ogg Vorbis, Speex, Flac and other audio; Defined in RFC 5334</summary>
+        </member>
+        <member name="F:Swashbuckle.OData.Tests.ContentType.ApplicationOgg">
+            <summary>Ogg, a multimedia bitstream container format; Defined in RFC 5334</summary>
+        </member>
+        <member name="F:Swashbuckle.OData.Tests.ContentType.ApplicationXopXml">
+            <summary>OP</summary>
+        </member>
+        <member name="F:Swashbuckle.OData.Tests.ContentType.ApplicationVndOasisOpendocumentGraphics">
+            <summary>OpenDocument Graphics; Registered[14]</summary>
+        </member>
+        <member name="F:Swashbuckle.OData.Tests.ContentType.ApplicationVndOasisOpendocumentPresentation">
+            <summary>OpenDocument Presentation; Registered[13]</summary>
+        </member>
+        <member name="F:Swashbuckle.OData.Tests.ContentType.ApplicationVndOasisOpendocumentSpreadsheet">
+            <summary>OpenDocument Spreadsheet; Registered[12]</summary>
+        </member>
+        <member name="F:Swashbuckle.OData.Tests.ContentType.ApplicationVndOasisOpendocumentText">
+            <summary>OpenDocument Text; Registered[11]</summary>
+        </member>
+        <member name="F:Swashbuckle.OData.Tests.ContentType.ApplicationXPkcs12">
+            <summary>p12 files</summary>
+        </member>
+        <member name="F:Swashbuckle.OData.Tests.ContentType.ApplicationXPkcs7Certificates">
+            <summary>p7b and spc files</summary>
+        </member>
+        <member name="F:Swashbuckle.OData.Tests.ContentType.ApplicationXPkcs7Mime">
+            <summary>p7c files</summary>
+        </member>
+        <member name="F:Swashbuckle.OData.Tests.ContentType.ApplicationXPkcs7Certreqresp">
+            <summary>
+            p7r files
+            </summary>
+        </member>
+        <member name="F:Swashbuckle.OData.Tests.ContentType.ApplicationXPkcs7Signature">
+            <summary>
+            p7s files
+            </summary>
+        </member>
+        <member name="F:Swashbuckle.OData.Tests.ContentType.ApplicationPdf">
+            <summary>
+            Portable Document Format, PDF has been in use for document exchange on the Internet since 1993; Defined in RFC 3778
+            </summary>
+        </member>
+        <member name="F:Swashbuckle.OData.Tests.ContentType.ImagePng">
+            <summary>
+            Portable Network Graphics; Registered,[8] Defined in RFC 2083
+            </summary>
+        </member>
+        <member name="F:Swashbuckle.OData.Tests.ContentType.ApplicationPostscript">
+            <summary>
+            PostScript; Defined in RFC 2046
+            </summary>
+        </member>
+        <member name="F:Swashbuckle.OData.Tests.ContentType.VideoQuicktime">
+            <summary>
+            QuickTime video; Registered[10]
+            </summary>
+        </member>
+        <member name="F:Swashbuckle.OData.Tests.ContentType.ApplicationXRarCompressed">
+            <summary>
+            RAR archive files
+            </summary>
+        </member>
+        <member name="F:Swashbuckle.OData.Tests.ContentType.AudioVndRnRealaudio">
+            <summary>
+            RealAudio; Documented in RealPlayer Customer Support Answer 2559
+            </summary>
+        </member>
+        <member name="F:Swashbuckle.OData.Tests.ContentType.ApplicationRdfXml">
+            <summary>
+            Resource Description Framework; Defined by RFC 3870
+            </summary>
+        </member>
+        <member name="F:Swashbuckle.OData.Tests.ContentType.ApplicationRssXml">
+            <summary>
+            RSS feeds
+            </summary>
+        </member>
+        <member name="F:Swashbuckle.OData.Tests.ContentType.ApplicationSoapXml">
+            <summary>
+            SOAP; Defined by RFC 3902
+            </summary>
+        </member>
+        <member name="F:Swashbuckle.OData.Tests.ContentType.ApplicationXStuffit">
+            <summary>
+            StuffIt archive files
+            </summary>
+        </member>
+        <member name="F:Swashbuckle.OData.Tests.ContentType.ImageSvgXml">
+            <summary>SVG vector image; Defined in SVG Tiny 1.2 Specification Appendix M</summary>
+        </member>
+        <member name="F:Swashbuckle.OData.Tests.ContentType.ImageTiff">
+            <summary>Tag Image File Format (only for Baseline TIFF); Defined in RFC 3302</summary>
+        </member>
+        <member name="F:Swashbuckle.OData.Tests.ContentType.ApplicationXTar">
+            <summary>Tarball files</summary>
+        </member>
+        <member name="F:Swashbuckle.OData.Tests.ContentType.TextPlain">
+            <summary>Textual data; Defined in RFC 2046 and RFC 3676</summary>
+        </member>
+        <member name="F:Swashbuckle.OData.Tests.ContentType.ApplicationXFontTtf">
+            <summary>TrueType Font No registered MIME type, but this is the most commonly used</summary>
+        </member>
+        <member name="F:Swashbuckle.OData.Tests.ContentType.TextVcard">
+            <summary>vCard (contact information); Defined in RFC 6350</summary>
+        </member>
+        <member name="F:Swashbuckle.OData.Tests.ContentType.AudioVorbis">
+            <summary>Vorbis encoded audio; Defined in RFC 5215</summary>
+        </member>
+        <member name="F:Swashbuckle.OData.Tests.ContentType.AudioVndWave">
+            <summary>WAV audio; Defined in RFC 2361</summary>
+        </member>
+        <member name="F:Swashbuckle.OData.Tests.ContentType.ApplicationFontWoff">
+            <summary>Web Open Font Format; (candidate recommendation; use application/x-font-woff until standard is official)</summary>
+        </member>
+        <member name="F:Swashbuckle.OData.Tests.ContentType.VideoWebm">
+            <summary>WebM Matroska-based open media format</summary>
+        </member>
+        <member name="F:Swashbuckle.OData.Tests.ContentType.AudioWebm">
+            <summary>WebM open media format</summary>
+        </member>
+        <member name="F:Swashbuckle.OData.Tests.ContentType.AudioXMsWax">
+            <summary>Windows Media Audio Redirector; Documented in Microsoft help page</summary>
+        </member>
+        <member name="F:Swashbuckle.OData.Tests.ContentType.AudioXMsWma">
+            <summary>Windows Media Audio; Documented in Microsoft KB 288102</summary>
+        </member>
+        <member name="F:Swashbuckle.OData.Tests.ContentType.VideoXMsWmv">
+            <summary>Windows Media Video; Documented in Microsoft KB 288102</summary>
+        </member>
+        <member name="F:Swashbuckle.OData.Tests.ContentType.ModelVrml">
+            <summary>WRL files, VRML files; Defined in RFC 2077</summary>
+        </member>
+        <member name="F:Swashbuckle.OData.Tests.ContentType.ModelX3DXml">
+            <summary>X3D ISO standard for representing 3D computer graphics, X3D XML files</summary>
+        </member>
+        <member name="F:Swashbuckle.OData.Tests.ContentType.ModelX3DBinary">
+            <summary>X3D ISO standard for representing 3D computer graphics, X3DB binary files</summary>
+        </member>
+        <member name="F:Swashbuckle.OData.Tests.ContentType.ModelX3DVrml">
+            <summary>X3D ISO standard for representing 3D computer graphics, X3DV VRML files</summary>
+        </member>
+        <member name="F:Swashbuckle.OData.Tests.ContentType.ApplicationXhtmlXml">
+            <summary>XHTML; Defined by RFC 3236</summary>
+        </member>
+        <member name="F:Swashbuckle.OData.Tests.ContentType.ApplicationZip">
+            <summary>ZIP archive files; Registered[7]</summary>
+        </member>
+        <member name="T:Swashbuckle.OData.Tests.GetHttpMethodNameTests">
+            <summary>
+            Tests the scenario where the controller GET action names don't include the Entity name.
+            </summary>
+        </member>
+        <member name="T:Swashbuckle.OData.Tests.GlobalEnableQueryTests">
+            <summary>
+            Tests the scenario where developer adds EnableQuery globally.
+            </summary>
+        </member>
+        <member name="T:Swashbuckle.OData.Tests.ApplySharedModelsDocumentation">
+            <summary>
+            Applies top-level Swagger documentation to the resources.
+            </summary>
+        </member>
+        <member name="M:Swashbuckle.OData.Tests.ODataSwaggerProviderTests.It_supports_caching_swagger_document">
+            <summary>
+            Test to check if the cached swagger documents have the same value as the non-cached and to check if they are valid
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Swashbuckle.OData.Tests.ODataSwaggerProviderTests.It_supports_a_custom_assemblies_resolver">
+            <summary>
+            Test to check if the custom assemblies resolver injection works
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Swashbuckle.OData.Tests.ProductWithEnumKeysTestController.Get">
+            <summary>
+            Query products
+            </summary>
+        </member>
+        <member name="M:Swashbuckle.OData.Tests.ProductWithEnumKeysTestController.Get(SwashbuckleODataSample.Models.MyEnum)">
+            <summary>
+            Query product by enum key
+            </summary>
+            <param name="Key">key enum value</param>
+            <returns>project enum model</returns>
+        </member>
+        <member name="M:Swashbuckle.OData.Tests.ProductWithCompositeEnumIntKeysTestController.Get">
+            <summary>
+            Query products
+            </summary>
+        </member>
+        <member name="M:Swashbuckle.OData.Tests.ProductWithCompositeEnumIntKeysTestController.Get(SwashbuckleODataSample.Models.MyEnum,System.Int32)">
+            <summary>
+            Query products by keys
+            </summary>
+            <param name="keyenumValue">key enum value</param>
+            <param name="keyid">key id</param>
+            <returns>composite enum-int key model</returns>
+        </member>
+        <member name="M:Swashbuckle.OData.Tests.ProductsV1Controller.MostExpensive">
+            <summary>
+            Get the most expensive product. This is a function bound to a collection.
+            </summary>
+        </member>
+        <member name="M:Swashbuckle.OData.Tests.ProductsV1Controller.Top10">
+            <summary>
+            Get the top 10 most expensive products. This is a function bound to a collection that returns a collection.
+            </summary>
+        </member>
+        <member name="M:Swashbuckle.OData.Tests.ProductsV1Controller.GetPriceRank(System.Int32)">
+            <summary>
+            Get the rank of the product price. This is a function bound to an entity.
+            </summary>
+            <param name="key">The product id</param>
+        </member>
+        <member name="M:Swashbuckle.OData.Tests.ProductsV1Controller.CalculateGeneralSalesTax(System.Int32,System.String)">
+            <summary>
+            Get the sales tax for a product in a given state. This is a function which accepts a parameter.
+            </summary>
+            <param name="key">The product id</param>
+            <param name="state">The state</param>
+        </member>
+        <member name="M:Swashbuckle.OData.Tests.ProductsV1Controller.GetSalesTaxRate(System.String)">
+            <summary>
+            Get the sales tax rate for a state. This is an unbound function.
+            </summary>
+            <param name="state">The state</param>
+        </member>
+        <member name="M:Swashbuckle.OData.Tests.ProductResponsesController.Get">
+            <summary>
+            An action that returns an IQueryable[]
+            </summary>
+        </member>
+        <member name="M:Swashbuckle.OData.Tests.ProductResponsesController.Top10">
+            <summary>
+            A function that returns a List[]
+            </summary>
+        </member>
+        <member name="M:Swashbuckle.OData.Tests.HttpExtensions.GetAsync(System.Net.Http.HttpClient)">
+            <summary>
+            Send a GET request to the specified Uri as an asynchronous operation.
+            </summary>
+            
+            <returns>
+            Returns <see cref="T:System.Threading.Tasks.Task`1"/>.The task object representing the asynchronous operation.
+            </returns>
+            <param name="client">The client used to make the request.</param>
+        </member>
+        <member name="M:Swashbuckle.OData.Tests.HttpExtensions.GetAsync``1(System.Net.Http.HttpClient)">
+            <summary>
+            Send a GET request to the specified Uri as an asynchronous operation.
+            </summary>
+            <typeparam name="T">The type returned by the GET request.</typeparam>
+            <param name="client">The client used to make the request.</param>
+        </member>
+        <member name="M:Swashbuckle.OData.Tests.HttpExtensions.GetJsonAsync``1(System.Net.Http.HttpClient,System.String)">
+            <summary>
+            Send a GET request to the specified Uri as an asynchronous operation.
+            </summary>
+            <typeparam name="T">The type returned by the GET request.</typeparam>
+            <param name="client">The client used to make the request.</param>
+            <param name="requestUri">The Uri the request is sent to.</param><exception cref="T:System.ArgumentNullException">The <paramref name="requestUri"/> was null.</exception>
+            <returns>The content deserialized as type T</returns>
+        </member>
+        <member name="M:Swashbuckle.OData.Tests.HttpExtensions.PatchAsJsonAsync``1(System.Net.Http.HttpClient,System.String,``0)">
+            <summary>
+            Sends a PATCH request as an asynchronous operation, with a specified value serialized as JSON.
+            </summary>
+            <returns>
+            A task object representing the asynchronous operation.
+            </returns>
+            <param name="client">The client used to make the request.</param>
+            <param name="requestUri">The URI the request is sent to.</param>
+            <param name="value">The value to write into the entity body of the request.</param>
+            <typeparam name="T">The type of object to serialize.</typeparam>
+        </member>
+        <member name="M:Swashbuckle.OData.Tests.HttpExtensions.PatchAsJsonAsync``1(System.Net.Http.HttpClient,System.String,``0,System.Threading.CancellationToken)">
+            <summary>
+            Sends a PATCH request as an asynchronous operation, with a specified value serialized as JSON. Includes a cancellation
+            token to cancel the request.
+            </summary>
+            <returns>
+            A task object representing the asynchronous operation.
+            </returns>
+            <param name="client">The client used to make the request.</param>
+            <param name="requestUri">The URI the request is sent to.</param>
+            <param name="value">The value to write into the entity body of the request.</param>
+            <param name="cancellationToken">
+            A cancellation token that can be used by other objects or threads to receive notice of
+            cancellation.
+            </param>
+            <typeparam name="T">The type of object to serialize.</typeparam>
+        </member>
+        <member name="M:Swashbuckle.OData.Tests.HttpExtensions.PatchAsXmlAsync``1(System.Net.Http.HttpClient,System.String,``0)">
+            <summary>
+            Sends a PATCH request as an asynchronous operation, with a specified value serialized as XML.
+            </summary>
+            <returns>
+            A task object representing the asynchronous operation.
+            </returns>
+            <param name="client">The client used to make the request.</param>
+            <param name="requestUri">The URI the request is sent to.</param>
+            <param name="value">The value to write into the entity body of the request.</param>
+            <typeparam name="T">The type of object to serialize.</typeparam>
+        </member>
+        <member name="M:Swashbuckle.OData.Tests.HttpExtensions.PatchAsXmlAsync``1(System.Net.Http.HttpClient,System.String,``0,System.Threading.CancellationToken)">
+            <summary>
+            Sends a PATCH request as an asynchronous operation, with a specified value serialized as XML. Includes a cancellation
+            token to cancel the request.
+            </summary>
+            <returns>
+            A task object representing the asynchronous operation.
+            </returns>
+            <param name="client">The client used to make the request.</param>
+            <param name="requestUri">The URI the request is sent to.</param>
+            <param name="value">The value to write into the entity body of the request.</param>
+            <param name="cancellationToken">
+            A cancellation token that can be used by other objects or threads to receive notice of
+            cancellation.
+            </param>
+            <typeparam name="T">The type of object to serialize.</typeparam>
+        </member>
+        <member name="M:Swashbuckle.OData.Tests.HttpExtensions.PatchAsync``1(System.Net.Http.HttpClient,System.String,``0,System.Net.Http.Formatting.MediaTypeFormatter)">
+            <summary>
+            Sends a PATCH request as an asynchronous operation, with a specified value serialized using the given formatter.
+            </summary>
+            <returns>
+            A task object representing the asynchronous operation.
+            </returns>
+            <param name="client">The client used to make the request.</param>
+            <param name="requestUri">The URI the request is sent to.</param>
+            <param name="value">The value to write into the entity body of the request.</param>
+            <param name="formatter">The formatter used to serialize the value.</param>
+            <typeparam name="T">The type of object to serialize.</typeparam>
+        </member>
+        <member name="M:Swashbuckle.OData.Tests.HttpExtensions.PatchAsync``1(System.Net.Http.HttpClient,System.String,``0,System.Net.Http.Formatting.MediaTypeFormatter,System.Threading.CancellationToken)">
+            <summary>
+            Sends a PATCH request as an asynchronous operation, with a specified value serialized using the given formatter.
+            Includes a cancellation token to cancel the request.
+            </summary>
+            <returns>
+            A task object representing the asynchronous operation.
+            </returns>
+            <param name="client">The client used to make the request.</param>
+            <param name="requestUri">The URI the request is sent to.</param>
+            <param name="value">The value to write into the entity body of the request.</param>
+            <param name="formatter">The formatter used to serialize the value.</param>
+            <param name="cancellationToken">
+            A cancellation token that can be used by other objects or threads to receive notice of
+            cancellation.
+            </param>
+            <typeparam name="T">The type of object to serialize.</typeparam>
+        </member>
+        <member name="M:Swashbuckle.OData.Tests.HttpExtensions.PatchAsync``1(System.Net.Http.HttpClient,System.String,``0,System.Net.Http.Formatting.MediaTypeFormatter,System.String)">
+            <summary>
+            Sends a PATCH request as an asynchronous operation, with a specified value serialized using the given formatter and
+            media type String.
+            </summary>
+            <returns>
+            A task object representing the asynchronous operation.
+            </returns>
+            <param name="client">The client used to make the request.</param>
+            <param name="requestUri">The URI the request is sent to.</param>
+            <param name="value">The value to write into the entity body of the request.</param>
+            <param name="formatter">The formatter used to serialize the value.</param>
+            <param name="mediaType">
+            The authoritative value of the Content-Type header. Can be null, in which case the  default
+            content type of the formatter will be used.
+            </param>
+            <typeparam name="T">The type of object to serialize.</typeparam>
+        </member>
+        <member name="M:Swashbuckle.OData.Tests.HttpExtensions.PatchAsync``1(System.Net.Http.HttpClient,System.String,``0,System.Net.Http.Formatting.MediaTypeFormatter,System.String,System.Threading.CancellationToken)">
+            <summary>
+            Sends a PATCH request as an asynchronous operation, with a specified value serialized using the given formatter and
+            media type String. Includes a cancellation token to cancel the request.
+            </summary>
+            <returns>
+            A task object representing the asynchronous operation.
+            </returns>
+            <param name="client">The client used to make the request.</param>
+            <param name="requestUri">The URI the request is sent to.</param>
+            <param name="value">The value to write into the entity body of the request.</param>
+            <param name="formatter">The formatter used to serialize the value.</param>
+            <param name="mediaType">
+            The authoritative value of the Content-Type header. Can be null, in which case the  default
+            content type of the formatter will be used.
+            </param>
+            <param name="cancellationToken">
+            A cancellation token that can be used by other objects or threads to receive notice of
+            cancellation.
+            </param>
+            <typeparam name="T">The type of object to serialize.</typeparam>
+        </member>
+        <member name="M:Swashbuckle.OData.Tests.HttpExtensions.PatchAsync``1(System.Net.Http.HttpClient,System.String,``0,System.Net.Http.Formatting.MediaTypeFormatter,System.Net.Http.Headers.MediaTypeHeaderValue,System.Threading.CancellationToken)">
+            <summary>
+            Sends a PATCH request as an asynchronous operation, with a specified value serialized using the given formatter and
+            media type.
+            </summary>
+            <returns>
+            A task object representing the asynchronous operation.
+            </returns>
+            <param name="client">The client used to make the request.</param>
+            <param name="requestUri">The URI the request is sent to.</param>
+            <param name="value">The value to write into the entity body of the request.</param>
+            <param name="formatter">The formatter used to serialize the value.</param>
+            <param name="mediaType">
+            The authoritative value of the Content-Type header. Can be null, in which case the  default
+            content type of the formatter will be used.
+            </param>
+            <param name="cancellationToken">
+            A cancellation token that can be used by other objects or threads to receive notice of
+            cancellation.
+            </param>
+            <typeparam name="T">The type of object to serialize.</typeparam>
+        </member>
+        <member name="T:Swashbuckle.OData.Tests.UnitTestODataVersionControllerSelector">
+            <summary>
+            Controllerselector that figures out the version suffix from the route name.
+            For example: request from route V1 can be dispatched to ProductsV1Controller.
+            </summary>
+        </member>
+        <member name="M:Swashbuckle.OData.Tests.UnitTestControllerSelector.#ctor(System.Web.Http.HttpConfiguration,System.Type[])">
+            <summary>
+            Initializes a new instance of the <see cref="T:Swashbuckle.OData.Tests.UnitTestControllerSelector"/> class.
+            </summary>
+            <param name="configuration">The configuration.</param>
+            <param name="targetControllers">The controller being targeted in the unit test.</param>
+        </member>
+        <member name="T:SwashbuckleODataSample.ApiControllers.Client">
+            <summary>
+            Client Comment
+            </summary>
+        </member>
+        <member name="P:SwashbuckleODataSample.ApiControllers.Client.Id">
+            <summary>
+            Client ID
+            </summary>
+        </member>
+        <member name="P:SwashbuckleODataSample.ApiControllers.Client.Name">
+            <summary>
+            Client Name
+            </summary>
+        </member>
+        <member name="P:SwashbuckleODataSample.ApiControllers.Client.Projects">
+            <summary>
+            Client Projects
+            </summary>
+        </member>
+        <member name="M:SwashbuckleODataSample.ApiControllers.ClientsController.GetClients">
+            <summary>
+            List clients
+            </summary>
+        </member>
+        <member name="M:SwashbuckleODataSample.ApiControllers.ClientsController.GetClient(System.Int32)">
+            <summary>
+            Get the client by id
+            </summary>
+            <param name="id">Client id</param>
+        </member>
+        <member name="M:SwashbuckleODataSample.ApiControllers.ClientsController.PutClient(System.Int32,SwashbuckleODataSample.ApiControllers.Client)">
+            <summary>
+            Replace all data for the client with the given id
+            </summary>
+            <param name="id">Client id</param>
+            <param name="client">Client details</param>
+        </member>
+        <member name="M:SwashbuckleODataSample.ApiControllers.ClientsController.PostClient(SwashbuckleODataSample.ApiControllers.Client)">
+            <summary>
+            Create a new client
+            </summary>
+            <param name="client">Client details</param>
+        </member>
+        <member name="M:SwashbuckleODataSample.ApiControllers.ClientsController.DeleteClient(System.Int32)">
+            <summary>
+            Delete the client with the given id
+            </summary>
+            <param name="id">Client id</param>
+        </member>
+        <member name="T:SwashbuckleODataSample.FormatterConfig">
+            <summary>
+            </summary>
+        </member>
+        <member name="M:SwashbuckleODataSample.FormatterConfig.Register(System.Web.Http.HttpConfiguration)">
+            <summary>
+            Registers the specified configuration.
+            </summary>
+            <param name="config">The configuration.</param>
+        </member>
+        <member name="T:SwashbuckleODataSample.Models.Customer">
+            <summary>
+            Customer comment
+            </summary>
+        </member>
+        <member name="P:SwashbuckleODataSample.Models.Customer.Id">
+            <summary>
+            Customer Id
+            </summary>
+        </member>
+        <member name="P:SwashbuckleODataSample.Models.Customer.Name">
+            <summary>
+            customer Name
+            </summary>
+        </member>
+        <member name="P:SwashbuckleODataSample.Models.Customer.Orders">
+            <summary>
+            Customer Orders
+            </summary>
+        </member>
+        <member name="M:SwashbuckleODataSample.ODataControllers.CustomersController.GetCustomers">
+            <summary>
+            Query customers
+            </summary>
+        </member>
+        <member name="M:SwashbuckleODataSample.ODataControllers.CustomersController.GetCustomer(System.Int32)">
+            <summary>
+            Query the customer by id
+            </summary>
+            <param name="key">The customer id</param>
+        </member>
+        <member name="M:SwashbuckleODataSample.ODataControllers.CustomersController.Put(System.Int32,Microsoft.AspNet.OData.Delta{SwashbuckleODataSample.Models.Customer})">
+            <summary>
+            Replace all data for the customer with the given id
+            </summary>
+            <param name="key">Customer id</param>
+            <param name="patch">Customer details</param>
+        </member>
+        <member name="M:SwashbuckleODataSample.ODataControllers.CustomersController.Post(SwashbuckleODataSample.Models.Customer)">
+            <summary>
+            Create a new customer
+            </summary>
+            <param name="customer">Customer details</param>
+        </member>
+        <member name="M:SwashbuckleODataSample.ODataControllers.CustomersController.Patch(System.Int32,Microsoft.AspNet.OData.Delta{SwashbuckleODataSample.Models.Customer})">
+            <summary>
+            Edit the customer with the given id
+            </summary>
+            <param name="key">Customer id</param>
+            <param name="patch">Customer details</param>
+        </member>
+        <member name="M:SwashbuckleODataSample.ODataControllers.CustomersController.Delete(System.Int32)">
+            <summary>
+            Delete the customer with the given id
+            </summary>
+            <param name="key">Customer id</param>
+        </member>
+        <member name="M:SwashbuckleODataSample.ODataControllers.CustomersController.TotalCount">
+            <summary>
+            An OData function example. Gets the total count of customers.
+            </summary>
+        </member>
+        <member name="M:SwashbuckleODataSample.ODataControllers.CustomersV1Controller.GetCustomers">
+            <summary>
+            Query customers
+            </summary>
+        </member>
+        <member name="M:SwashbuckleODataSample.ODataControllers.CustomersV1Controller.GetCustomer(System.Int32)">
+            <summary>
+            Query the customer by id
+            </summary>
+            <param name="key">The customer id</param>
+        </member>
+        <member name="M:SwashbuckleODataSample.ODataControllers.OrdersController.Get">
+            <summary>
+            Query orders
+            </summary>
+        </member>
+        <member name="M:SwashbuckleODataSample.ODataControllers.OrdersController.Get(System.Int32)">
+            <summary>
+            Query orders by Customer Id
+            </summary>
+        </member>
+        <member name="M:SwashbuckleODataSample.ODataControllers.OrdersController.Post(System.Int32,SwashbuckleODataSample.Models.Order)">
+            <summary>
+            An example of a custom route. Create a new order for the customer with the given id
+            </summary>
+            <param name="customerId">The customer id</param>
+            <param name="order">Order details</param>
+        </member>
+        <member name="M:SwashbuckleODataSample.ODataControllers.OrdersController.GetOrder(System.Guid)">
+            <summary>
+            Query the order by id
+            </summary>
+            <param name="key">The order id</param>
+        </member>
+        <member name="M:SwashbuckleODataSample.ODataControllers.OrdersController.Post(SwashbuckleODataSample.Models.Order)">
+            <summary>
+            Create a new order
+            </summary>
+            <param name="order">Order details</param>
+        </member>
+        <member name="M:SwashbuckleODataSample.ODataControllers.OrdersController.Patch(System.Guid,Microsoft.AspNet.OData.Delta{SwashbuckleODataSample.Models.Order})">
+            <summary>
+            Edit the order with the given id
+            </summary>
+            <param name="key">Order id</param>
+            <param name="patch">Order details</param>
+        </member>
+        <member name="M:SwashbuckleODataSample.ODataControllers.OrdersController.Delete(System.Guid)">
+            <summary>
+            Delete the order with the given id
+            </summary>
+            <param name="key">Order id</param>
+        </member>
+        <member name="M:SwashbuckleODataSample.ODataControllers.ProductsController.GetProducts">
+            <summary>
+            Query products
+            </summary>
+        </member>
+        <member name="M:SwashbuckleODataSample.ODataControllers.ProductsController.GetByEnumValue(SwashbuckleODataSample.Models.MyEnum)">
+            <summary>
+            Demonstrates a function that accepts an enum parameter from the OData URI.
+            </summary>
+        </member>
+        <member name="M:SwashbuckleODataSample.ODataControllers.ProductsController.IsEnumValueMatch(System.Int32,SwashbuckleODataSample.Models.MyEnum)">
+            <summary>
+            Demonstrates a function binds to an entity that accepts an enum parameter from the OData URI.
+            </summary>
+        </member>
+        <member name="M:SwashbuckleODataSample.ODataControllers.ProductsController.MostExpensive">
+            <summary>
+            Get the most expensive product. This is a function bound to a collection.
+            </summary>
+        </member>
+        <member name="M:SwashbuckleODataSample.ODataControllers.ProductsController.Top10">
+            <summary>
+            Get the top 10 most expensive products. This is a function bound to a collection that returns a collection.
+            </summary>
+        </member>
+        <member name="M:SwashbuckleODataSample.ODataControllers.ProductsController.GetPriceRank(System.Int32)">
+            <summary>
+            Get the rank of the product price. This is a function bound to an entity.
+            </summary>
+            <param name="key">The product id</param>
+        </member>
+        <member name="M:SwashbuckleODataSample.ODataControllers.ProductsController.CalculateGeneralSalesTax(System.Int32,System.String)">
+            <summary>
+            Get the sales tax for a product in a given state. This function accepts a parameter.
+            </summary>
+            <param name="key">The product id</param>
+            <param name="state">The state</param>
+        </member>
+        <member name="M:SwashbuckleODataSample.ODataControllers.ProductsController.ProductsWithIds(System.Int32[])">
+            <summary>
+            Get products with the given Ids. This function accepts a parameter of type 'array'.
+            </summary>
+            <param name="Ids">The ids.</param>
+        </member>
+        <member name="M:SwashbuckleODataSample.ODataControllers.ProductsController.Create(Microsoft.AspNet.OData.ODataActionParameters)">
+            <summary>
+            Creates a product from values passed in an ODataActionParameters object.
+            </summary>
+            <param name="parameters">The OData action parameters.</param>
+        </member>
+        <member name="M:SwashbuckleODataSample.ODataControllers.ProductsController.PostArray(Microsoft.AspNet.OData.ODataActionParameters)">
+            <summary>
+            Creates a set of products from an array of ProductDTOs passed in an ODataActionParameters object.
+            </summary>
+            <param name="parameters">The OData action parameters containing an array of ProductDTOs</param>
+        </member>
+        <member name="M:SwashbuckleODataSample.ODataControllers.ProductsController.Rate(System.Int32,Microsoft.AspNet.OData.ODataActionParameters)">
+            <summary>
+            Rates a product. This action targets a specific entity by id.
+            </summary>
+            <param name="key">The product id.</param>
+            <param name="parameters">The OData action parameters.</param>
+        </member>
+        <member name="M:SwashbuckleODataSample.ODataControllers.ProductWithCompositeEnumIntKeysController.Get">
+            <summary>
+            Query products
+            </summary>
+        </member>
+        <member name="M:SwashbuckleODataSample.ODataControllers.ProductWithCompositeEnumIntKeysController.Get(SwashbuckleODataSample.Models.MyEnum,System.Int32)">
+            <summary>
+            Query products by keys
+            </summary>
+            <param name="keyenumValue">key enum value</param>
+            <param name="keyid">key id</param>
+            <returns>composite enum-int key model</returns>
+        </member>
+        <member name="M:SwashbuckleODataSample.ODataControllers.ProductWithEnumKeysController.Get">
+            <summary>
+            Query products
+            </summary>
+        </member>
+        <member name="M:SwashbuckleODataSample.ODataControllers.ProductWithEnumKeysController.Get(SwashbuckleODataSample.Models.MyEnum)">
+            <summary>
+            Query product by enum key
+            </summary>
+            <param name="Key">key enum value</param>
+            <returns>project enum model</returns>
+        </member>
+        <member name="T:SwashbuckleODataSample.Utils.CustomAssembliesResolver">
+            <summary>
+            Custom Assemblies Resolver, using the default assemblies resolver, only for demonstration purposes
+            </summary>
+        </member>
+        <member name="T:SwashbuckleODataSample.Utils.SequentialGuidGenerator">
+            <summary>
+            Generates <see cref="T:System.Guid" /> values using strategy from Jeremy Todd.
+            See <a href="http://www.codeproject.com/Articles/388157/GUIDs-as-fast-primary-keys-under-multiple-database">GUIDs as fast primary keys under multiple databases</a>.
+            </summary>
+        </member>
+        <member name="T:SwashbuckleODataSample.Utils.SequentialGuidType">
+            <remarks>
+                Database 	            GUID Column 	    SequentialGuidType
+                Microsoft SQL Server 	uniqueidentifier 	SequentialAtEnd
+                MySQL 	                char(36) 	        SequentialAsString
+                Oracle 	                raw(16) 	        SequentialAsBinary
+                PostgreSQL 	            uuid 	            SequentialAsString
+                SQLite  	            varies  	        varies
+            </remarks>
+        </member>
+        <member name="F:SwashbuckleODataSample.Utils.SequentialGuidType.SequentialAsString">
+            <summary>
+            Use for MySQL char(36)
+            Use for PostgreSQL uuid
+            </summary>
+        </member>
+        <member name="F:SwashbuckleODataSample.Utils.SequentialGuidType.SequentialAsBinary">
+            <summary>
+            Use for Oracle raw(16)
+            </summary>
+        </member>
+        <member name="F:SwashbuckleODataSample.Utils.SequentialGuidType.SequentialAtEnd">
+            <summary>
+            Use for Microsoft SQL Server uniqueidentifier
+            </summary>
+        </member>
+    </members>
+</doc>
