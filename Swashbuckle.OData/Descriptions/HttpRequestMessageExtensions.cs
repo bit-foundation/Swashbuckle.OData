@@ -53,7 +53,7 @@ namespace Swashbuckle.OData.Descriptions
 
             try
             {
-                var actionSelector = new ODataActionSelector(new ApiControllerActionSelector());
+                var actionSelector = (perControllerConfig.Properties.TryGetValue("SwaggerActionSelector", out object val) && val is IHttpActionSelector swaggerActionSelector) ? swaggerActionSelector : perControllerConfig.Services?.GetActionSelector();
                 Contract.Assume(actionSelector != null);
                 actionDescriptor = actionSelector.SelectAction(controllerContext);
             }
